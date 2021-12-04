@@ -8,7 +8,7 @@ public class Session {
         this.students = students;
     }
 
-    public void PrintQuizScores() {
+    public void printQuizScores() {
         System.out.println("The Quiz Scores in this session are");
         Arrays.sort(scores);
         for (int i = 0; i < scores.length; i++) {
@@ -16,7 +16,7 @@ public class Session {
         }
     }
 
-    public void PrintPartTimeStudents() {
+    public void printPartTimeStudents() {
         System.out.println("The Part Time Students are");
         for (Student student : students) {
             if (student.type == "Part") {
@@ -25,15 +25,15 @@ public class Session {
         }
     }
 
-    public void PrintAvgScores() {
+    public void printAvgScores() {
         System.out.println("The Average Scores are");
         for (Student student : students) {
-            double score = student.CalculateAverageScore();
+            double score = student.calculateAverageScore();
             System.out.println(String.format("%.2f", score));
         }
     }
 
-    public void PrintExamScores() {
+    public void printExamScores() {
         System.out.println("The Exam Scores are");
         for (Student student : students) {
             if (student.type == "Full") {

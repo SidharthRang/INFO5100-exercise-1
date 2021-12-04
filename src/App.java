@@ -30,9 +30,9 @@ public class App {
         }
         
         Session session = new Session(students);
-        session.PrintAvgScores();
-        session.PrintExamScores();
-        session.PrintPartTimeStudents();
-        session.PrintQuizScores();
+        session.printAvgScores();
+        session.printExamScores();
+        session.printPartTimeStudents();
+        session.printQuizScores();
     }
 }

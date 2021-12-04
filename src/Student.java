@@ -5,7 +5,7 @@ public class Student {
     String name,type;
     int[] quizScore = new int[15];
 
-    public double CalculateAverageScore(){
+    public double calculateAverageScore(){
         return Arrays.stream(this.quizScore).average().getAsDouble();
     }
 }
